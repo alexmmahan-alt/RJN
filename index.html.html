@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RJN Physical Therapy | Orthopedic & Sports Injury Care | Latham, NY</title>
+  <meta name="description" content="RJN Physical Therapy — orthopedic and sports injury specialists in Latham, NY since 1994. Expert therapists, personalized care, proven results.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://rjnphysicaltherapy.com/">
+  <meta property="og:title" content="RJN Physical Therapy | Orthopedic & Sports Injury Care | Latham, NY">
+  <meta property="og:description" content="Orthopedic and sports injury specialists in Latham, NY since 1994. Expert therapists, personalized care, proven results.">
+  <meta property="og:image" content="https://static.wixstatic.com/media/90a441_22d980452f8c4e0b9413f14de29aac97~mv2.jpg/v1/fill/w_1600,h_900,al_c,q_85,enc_avif,quality_auto/90a441_22d980452f8c4e0b9413f14de29aac97~mv2.jpg">
+  <meta property="og:image:width" content="1600">
+  <meta property="og:image:height" content="900">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="RJN Physical Therapy | Latham, NY">
+  <meta name="twitter:description" content="Orthopedic and sports injury specialists in Latham, NY since 1994.">
+  <meta name="twitter:image" content="https://static.wixstatic.com/media/90a441_22d980452f8c4e0b9413f14de29aac97~mv2.jpg/v1/fill/w_1600,h_900,al_c,q_85,enc_avif,quality_auto/90a441_22d980452f8c4e0b9413f14de29aac97~mv2.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/jpeg" href="https://static.wixstatic.com/media/90a441_5cbf4a3b25c84a75ba2e2e844b4e984d~mv2.jpg/v1/fill/w_163,h_131,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/90a441_5cbf4a3b25c84a75ba2e2e844b4e984d~mv2.jpg">
+  <link rel="apple-touch-icon" href="https://static.wixstatic.com/media/90a441_5cbf4a3b25c84a75ba2e2e844b4e984d~mv2.jpg/v1/fill/w_163,h_131,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/90a441_5cbf4a3b25c84a75ba2e2e844b4e984d~mv2.jpg">
+  <style>
+    :root {
+      /* Navy base — deep, clinical, premium */
+      --n950: #060d1a; --n900: #0b1628; --n800: #112038; --n700: #1a3150;
+      --n600: #264a70; --n500: #3a6491; --n400: #6b92b8; --n300: #a3c0d8;
+      --n200: #d0e1ee; --n100: #eaf2f8; --n50: #f5f9fc;
+      /* Green accent — health, recovery, vitality */
+      --g600: #16613a; --g500: #1a7d4a; --g400: #22a162; --g300: #4bbf80;
+      --g200: #a3dfc0; --g100: #d6f2e6; --g50: #edf9f3;
+      --g-glow: rgba(26,125,74,.12); --g-glows: rgba(26,125,74,.2);
+      /* Blue secondary accent */
+      --b500: #1e6fbd; --b400: #3b8fd4; --b300: #7db8e8;
+      --b-g: rgba(30,111,189,.1);
+      /* Warm neutrals for type */
+      --ink: #0e1c2f; --ink2: #2d4157; --muted: #5a7494; --faint: #8ba4ba;
+      --fd: 'Instrument Serif', Georgia, serif;
+      --fb: 'Outfit', system-ui, sans-serif;
+      --ease: cubic-bezier(.22,1,.36,1);
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+    body { font-family: var(--fb); color: var(--ink); background: #fff; line-height: 1.7; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+    img { max-width: 100%; height: auto; display: block; }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+    .w { width: min(1200px, 90%); margin: 0 auto; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
+
+    /* ── NAV ── */
+    .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(255,255,255,.92); backdrop-filter: blur(20px) saturate(1.8); -webkit-backdrop-filter: blur(20px) saturate(1.8); border-bottom: 1px solid var(--n200); box-shadow: 0 1px 12px rgba(6,13,26,.06); }
+    .nav-i { display: flex; align-items: center; justify-content: space-between; height: 72px; }
+    .nav-b { display: flex; align-items: center; gap: 12px; }
+    .nav-b img { width: 42px; height: 42px; border-radius: 10px; object-fit: cover; box-shadow: 0 2px 8px rgba(6,13,26,.15); }
+    .nav-bt { line-height: 1.15; }
+    .nav-bt strong { font-family: var(--fd); font-size: 1.05rem; color: var(--ink); display: block; }
+    .nav-bt small { font-size: .6rem; font-weight: 700; color: var(--muted); letter-spacing: .12em; text-transform: uppercase; }
+    .nm { display: flex; align-items: center; gap: 2px; }
+    .nm a { padding: 7px 14px; font-size: .8rem; font-weight: 500; color: var(--ink2); border-radius: 8px; transition: all .2s var(--ease); }
+    .nm a:hover { color: var(--ink); background: var(--n100); }
+    .nm .nc { margin-left: 10px; padding: 10px 24px; background: var(--g500); color: #fff; border-radius: 10px; font-weight: 600; font-size: .82rem; letter-spacing: .01em; box-shadow: 0 2px 12px var(--g-glow); }
+    .nc:hover { background: var(--g400) !important; color: #fff !important; transform: translateY(-1px); box-shadow: 0 6px 20px var(--g-glows) !important; }
+    .hb { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
+    .hb span { display: block; width: 22px; height: 2px; background: var(--ink); border-radius: 2px; transition: .3s var(--ease); }
+    .hb span+span { margin-top: 5px; }
+    .hb.on span:nth-child(1) { transform: rotate(45deg) translate(5px,5px); }
+    .hb.on span:nth-child(2) { opacity: 0; }
+    .hb.on span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); }
+
+    /* ── HERO ── */
+    .hero { min-height: 100vh; display: flex; align-items: center; background: var(--n950); position: relative; overflow: hidden; }
+    .hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 70% 60% at 60% 40%, rgba(26,125,74,.07) 0%, transparent 70%), radial-gradient(ellipse 50% 50% at 80% 70%, rgba(30,111,189,.06) 0%, transparent 60%); }
+    .hero-g { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; padding: 136px 0 108px; position: relative; }
+    .hero-ey { display: inline-flex; align-items: center; gap: 10px; font-size: .68rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--g300); margin-bottom: 24px; animation: fu .8s var(--ease) .2s both; }
+    .hero-ey::before { content: ''; width: 28px; height: 1.5px; background: var(--g400); border-radius: 2px; }
+    .hero h1 { font-family: var(--fd); font-size: clamp(2.9rem,5.2vw,4.4rem); color: #fff; line-height: 1.04; letter-spacing: -.025em; margin-bottom: 24px; animation: fu .8s var(--ease) .3s both; }
+    .hero h1 em { font-style: italic; color: var(--g300); }
+    .hero-p { font-size: 1.05rem; color: var(--n300); line-height: 1.78; max-width: 440px; margin-bottom: 40px; animation: fu .8s var(--ease) .45s both; }
+    .hero-a { display: flex; gap: 12px; flex-wrap: wrap; animation: fu .8s var(--ease) .6s both; }
+    .btn { display: inline-flex; align-items: center; gap: 9px; padding: 14px 28px; font-family: var(--fb); font-size: .87rem; font-weight: 600; border-radius: 12px; border: none; cursor: pointer; transition: all .28s var(--ease); letter-spacing: .01em; }
+    .btn svg { width: 16px; height: 16px; transition: transform .28s var(--ease); flex-shrink: 0; }
+    .btn:hover svg { transform: translateX(3px); }
+    .btn-cy { background: var(--g500); color: #fff; box-shadow: 0 4px 18px var(--g-glow); }
+    .btn-cy:hover { background: var(--g400); transform: translateY(-2px); box-shadow: 0 8px 28px var(--g-glows); }
+    .btn-gh { background: transparent; color: var(--n300); border: 1.5px solid var(--n600); }
+    .btn-gh:hover { border-color: var(--n400); color: #fff; transform: translateY(-2px); background: rgba(255,255,255,.04); }
+    .btn-dk { background: var(--n800); color: #fff; border: 1px solid var(--n700); }
+    .btn-dk:hover { background: var(--n700); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(6,13,26,.25); }
+    .hero-v { position: relative; animation: fi 1s var(--ease) .5s both; }
+    .hero-v img { width: 100%; height: 520px; object-fit: cover; border-radius: 18px; border: 1px solid var(--n700); box-shadow: 0 32px 80px rgba(6,13,26,.5); }
+    .hf-card { position: absolute; bottom: -28px; left: -36px; background: var(--n800); border: 1px solid var(--n700); border-radius: 16px; padding: 22px 28px; animation: fu .8s var(--ease) .9s both; box-shadow: 0 16px 40px rgba(6,13,26,.4); }
+    .hf-card .n { font-family: var(--fd); font-size: 2.8rem; color: var(--g300); line-height: 1; }
+    .hf-card .l { font-size: .72rem; color: var(--n400); font-weight: 500; margin-top: 4px; letter-spacing: .02em; }
+    .hs-row { position: absolute; top: -18px; right: -18px; display: flex; gap: 10px; animation: fu .8s var(--ease) 1s both; }
+    .hs-pill { background: var(--n800); border: 1px solid var(--n700); border-radius: 12px; padding: 14px 20px; text-align: center; box-shadow: 0 8px 24px rgba(6,13,26,.3); }
+    .hs-pill .n { font-family: var(--fd); font-size: 1.5rem; color: #fff; line-height: 1; }
+    .hs-pill .l { font-size: .62rem; color: var(--n400); font-weight: 600; margin-top: 3px; letter-spacing: .05em; text-transform: uppercase; }
+    .hero-glow { position: absolute; width: 700px; height: 700px; border-radius: 50%; background: var(--g500); opacity: .035; filter: blur(130px); top: 50%; right: -120px; transform: translateY(-50%); }
+    @keyframes fu { from { opacity: 0; transform: translateY(28px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes fi { from { opacity: 0; } to { opacity: 1; } }
+
+    /* ── ABOUT ── */
+    .about { padding: 128px 0; background: #fff; }
+    .about-l { display: grid; grid-template-columns: .48fr .52fr; gap: 88px; align-items: center; }
+    .about-m { position: relative; }
+    .about-m img { width: 100%; height: 500px; object-fit: cover; border-radius: 18px; box-shadow: 0 24px 60px rgba(6,13,26,.12); }
+    .about-m .ab { position: absolute; top: 28px; right: -18px; width: 4px; height: 110px; background: var(--g500); border-radius: 4px; }
+    .tag { display: inline-flex; align-items: center; gap: 8px; font-size: .67rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--g500); margin-bottom: 16px; }
+    .tag::before { content: ''; width: 20px; height: 2px; background: var(--g500); border-radius: 2px; }
+    .hd { font-family: var(--fd); font-size: clamp(1.85rem,3.4vw,2.65rem); line-height: 1.1; letter-spacing: -.02em; margin-bottom: 18px; color: var(--ink); }
+    .pr { font-size: .94rem; color: var(--ink2); line-height: 1.82; max-width: 500px; }
+    .mis { margin-top: 32px; padding: 26px 30px; background: var(--g50); border-left: 3px solid var(--g500); border-radius: 0 14px 14px 0; }
+    .mis h4 { font-family: var(--fd); font-size: 1.05rem; margin-bottom: 8px; color: var(--ink); }
+    .mis p { font-size: .87rem; color: var(--ink2); font-style: italic; line-height: 1.75; }
+
+    /* ── SERVICES ── */
+    .svc { padding: 128px 0; background: var(--n950); color: #fff; position: relative; overflow: hidden; }
+    .svc .tag { color: var(--g300); } .svc .tag::before { background: var(--g300); }
+    .svc .hd { color: #fff; } .svc .pr { color: var(--n300); }
+    .svc-h { max-width: 520px; margin-bottom: 64px; }
+    .svc-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; background: var(--n800); border-radius: 20px; overflow: hidden; border: 1px solid var(--n800); }
+    .sc { background: var(--n900); padding: 42px 32px; transition: all .35s var(--ease); position: relative; }
+    .sc:hover { background: rgba(26,125,74,.06); }
+    .sc::after { content: ''; position: absolute; bottom: 0; left: 32px; right: 32px; height: 2px; background: var(--g500); transform: scaleX(0); transform-origin: left; transition: transform .4s var(--ease); border-radius: 2px; }
+    .sc:hover::after { transform: scaleX(1); }
+    .sc-n { font-family: var(--fd); font-size: 2.4rem; color: var(--n800); line-height: 1; margin-bottom: 20px; transition: color .35s var(--ease); letter-spacing: -.02em; }
+    .sc:hover .sc-n { color: var(--g400); }
+    .sc h3 { font-family: var(--fd); font-size: 1.22rem; margin-bottom: 10px; color: #fff; }
+    .sc p { font-size: .85rem; color: var(--n400); line-height: 1.75; }
+    .svc-gl { position: absolute; width: 500px; height: 500px; background: var(--g500); opacity: .025; filter: blur(150px); border-radius: 50%; bottom: -200px; left: -100px; }
+
+    /* ── TEAM ── */
+    .team { padding: 128px 0; background: var(--n50); }
+    .team-h { text-align: center; max-width: 560px; margin: 0 auto 64px; }
+    .team-h .pr { margin: 0 auto; color: var(--ink2); }
+    .tg { display: grid; grid-template-columns: repeat(4,1fr); gap: 20px; }
+    .tc { border-radius: 18px; overflow: hidden; background: #fff; border: 1px solid var(--n200); transition: all .35s var(--ease); box-shadow: 0 2px 12px rgba(6,13,26,.06); }
+    .tc:hover { transform: translateY(-7px); box-shadow: 0 24px 56px rgba(6,13,26,.11); border-color: var(--g200); }
+    .tc-i { height: 285px; overflow: hidden; }
+    .tc-i img { width: 100%; height: 100%; object-fit: cover; object-position: top; transition: transform .5s var(--ease); }
+    .tc:hover .tc-i img { transform: scale(1.05); }
+    .tc-b { padding: 20px 22px; }
+    .tc-b h3 { font-family: var(--fd); font-size: 1.1rem; margin-bottom: 3px; color: var(--ink); }
+    .tc-b span { font-size: .7rem; font-weight: 700; color: var(--g500); letter-spacing: .04em; }
+
+    /* ── SHOP ── */
+    .shop { padding: 128px 0; background: var(--n900); color: #fff; position: relative; overflow: hidden; }
+    .shop::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 50% at 80% 20%, rgba(26,125,74,.06) 0%, transparent 60%); }
+    .shop .tag { color: var(--g300); } .shop .tag::before { background: var(--g300); }
+    .shop-h { text-align: center; max-width: 560px; margin: 0 auto 64px; position: relative; }
+    .shop-h .pr { margin: 0 auto; color: var(--n300); }
+    .sg { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; position: relative; }
+    .pc { background: var(--n800); border: 1px solid var(--n700); border-radius: 20px; overflow: hidden; transition: all .4s var(--ease); display: flex; flex-direction: column; }
+    .pc:hover { transform: translateY(-6px); border-color: var(--g500); box-shadow: 0 0 50px rgba(26,125,74,.1), 0 20px 60px rgba(6,13,26,.3); }
+    .pc-hero { height: 220px; display: flex; align-items: center; justify-content: center; background: var(--n950); position: relative; }
+    .pc-hero svg { width: 80px; height: 80px; color: var(--g500); opacity: .15; }
+    .pc-badge { position: absolute; top: 14px; left: 14px; padding: 5px 13px; background: var(--g500); color: #fff; font-size: .64rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; border-radius: 8px; box-shadow: 0 2px 8px var(--g-glow); }
+    .pc-body { padding: 30px; flex: 1; display: flex; flex-direction: column; }
+    .pc-body h3 { font-family: var(--fd); font-size: 1.4rem; margin-bottom: 4px; color: #fff; }
+    .pc-body .ps { font-size: .76rem; color: var(--g300); font-weight: 600; margin-bottom: 16px; letter-spacing: .02em; }
+    .pc-body > p { font-size: .86rem; color: var(--n300); line-height: 1.78; margin-bottom: 20px; }
+    .pt { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 26px; }
+    .pt span { padding: 5px 12px; background: var(--n900); border: 1px solid var(--n700); border-radius: 8px; font-size: .7rem; font-weight: 600; color: var(--n300); display: inline-flex; align-items: center; gap: 5px; }
+    .pt span svg { width: 11px; height: 11px; color: var(--g400); }
+    .pc-ft { margin-top: auto; padding-top: 20px; border-top: 1px solid var(--n700); display: flex; align-items: center; justify-content: space-between; }
+    .pc-ft .pr { font-family: var(--fd); font-size: 1rem; color: var(--n300); max-width: none; }
+
+    /* ── TESTIMONIALS ── */
+    .test { padding: 128px 0; background: #fff; }
+    .test-h { text-align: center; max-width: 500px; margin: 0 auto 64px; }
+    .test-h .pr { margin: 0 auto; }
+    .test-g { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
+    .tsc { background: var(--n50); border: 1px solid var(--n200); border-radius: 18px; padding: 36px 30px; display: flex; flex-direction: column; transition: all .3s var(--ease); box-shadow: 0 2px 12px rgba(6,13,26,.04); }
+    .tsc:hover { transform: translateY(-5px); box-shadow: 0 16px 48px rgba(6,13,26,.09); border-color: var(--g200); }
+    .ts-s { display: flex; gap: 3px; margin-bottom: 20px; }
+    .ts-s svg { width: 15px; height: 15px; fill: var(--g400); color: var(--g400); }
+    .tsc blockquote { font-size: .9rem; color: var(--ink2); line-height: 1.82; flex: 1; margin-bottom: 24px; font-style: italic; }
+    .ts-a { display: flex; align-items: center; gap: 12px; padding-top: 20px; border-top: 1px solid var(--n200); }
+    .ts-av { width: 40px; height: 40px; border-radius: 50%; background: var(--g50); border: 2px solid var(--g200); display: flex; align-items: center; justify-content: center; font-family: var(--fd); font-size: 1rem; color: var(--g500); flex-shrink: 0; }
+    .ts-a strong { font-size: .84rem; color: var(--ink); } .ts-a small { font-size: .7rem; color: var(--muted); display: block; }
+
+    /* ── INSURANCE ── */
+    .ins { padding: 128px 0; background: var(--n50); }
+    .ins-l { display: grid; grid-template-columns: 1fr 1.2fr; gap: 88px; align-items: start; }
+    .il { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .ii { display: flex; align-items: center; gap: 10px; padding: 14px 18px; background: #fff; border: 1px solid var(--n200); border-radius: 10px; font-size: .84rem; font-weight: 500; color: var(--ink2); transition: all .2s var(--ease); box-shadow: 0 1px 4px rgba(6,13,26,.05); }
+    .ii:hover { border-color: var(--g300); background: var(--g50); transform: translateX(4px); color: var(--ink); }
+    .ii svg { width: 15px; height: 15px; color: var(--g500); flex-shrink: 0; }
+
+    /* ── EMPIRE ── */
+    .emp { padding: 128px 0; background: #fff; }
+    .emp-c { background: var(--n950); border-radius: 24px; padding: 56px 64px; display: grid; grid-template-columns: 1fr 1.1fr; gap: 52px; align-items: center; position: relative; overflow: hidden; box-shadow: 0 32px 80px rgba(6,13,26,.18); }
+    .emp-c .tag { color: var(--g300); } .emp-c .tag::before { background: var(--g300); }
+    .emp-c h2 { font-family: var(--fd); font-size: clamp(1.7rem,3vw,2.3rem); color: #fff; line-height: 1.12; margin-bottom: 16px; }
+    .emp-c>div>p { color: var(--n300); line-height: 1.78; font-size: .91rem; margin-bottom: 28px; }
+    .ep { display: flex; gap: 20px; align-items: start; background: var(--n900); border: 1px solid var(--n800); border-radius: 16px; padding: 28px; }
+    .ep img { width: 90px; height: 90px; border-radius: 12px; object-fit: cover; flex-shrink: 0; box-shadow: 0 8px 20px rgba(6,13,26,.3); }
+    .ep h3 { font-family: var(--fd); font-size: 1.1rem; color: #fff; margin-bottom: 2px; }
+    .ep .cr { font-size: .7rem; color: var(--g300); font-weight: 700; margin-bottom: 10px; letter-spacing: .04em; }
+    .ep p { font-size: .82rem; color: var(--n400); line-height: 1.72; }
+    .emp-gl { position: absolute; width: 400px; height: 400px; background: var(--g500); opacity: .04; filter: blur(100px); border-radius: 50%; top: -150px; right: -100px; }
+
+    /* ── HOURS ── */
+    .hrs { background: var(--g500); padding: 46px 0; }
+    .hrs-r { display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; }
+    .hrs-i { text-align: center; }
+    .hrs-i .d { font-size: .63rem; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; color: rgba(255,255,255,.55); margin-bottom: 4px; }
+    .hrs-i .t { font-family: var(--fd); font-size: 1rem; color: #fff; }
+
+    /* ── CONTACT ── */
+    .cta { padding: 128px 0; background: var(--n50); }
+    .cta-g { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; }
+    .ci-cards { display: grid; gap: 12px; margin-top: 32px; }
+    .ci-c { display: flex; align-items: start; gap: 16px; padding: 20px; background: #fff; border: 1px solid var(--n200); border-radius: 14px; transition: all .25s var(--ease); box-shadow: 0 2px 8px rgba(6,13,26,.05); }
+    .ci-c:hover { border-color: var(--g300); transform: translateX(4px); box-shadow: 0 4px 20px rgba(6,13,26,.08); }
+    .ci-ico { width: 44px; height: 44px; border-radius: 12px; background: var(--g50); border: 1px solid var(--g100); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .ci-ico svg { width: 18px; height: 18px; color: var(--g500); }
+    .ci-c h4 { font-size: .68rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: var(--muted); margin-bottom: 4px; }
+    .ci-c p, .ci-c a { font-size: .9rem; font-weight: 500; color: var(--ink2); }
+    .ci-c a:hover { color: var(--g500); }
+    .cf { background: #fff; border: 1px solid var(--n200); border-radius: 20px; padding: 44px; box-shadow: 0 4px 24px rgba(6,13,26,.07); }
+    .cf h3 { font-family: var(--fd); font-size: 1.45rem; margin-bottom: 6px; color: var(--ink); }
+    .cf>p { font-size: .86rem; color: var(--muted); margin-bottom: 28px; }
+    .fr { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .fg { margin-bottom: 16px; }
+    .fg label { display: block; font-size: .75rem; font-weight: 700; margin-bottom: 7px; color: var(--ink2); letter-spacing: .02em; }
+    .fg input, .fg textarea, .fg select { width: 100%; padding: 12px 16px; font-family: var(--fb); font-size: .88rem; border: 1.5px solid var(--n200); border-radius: 10px; background: var(--n50); color: var(--ink); transition: all .2s var(--ease); outline: none; }
+    .fg input:focus, .fg textarea:focus, .fg select:focus { border-color: var(--g500); box-shadow: 0 0 0 3px var(--g-glow); background: #fff; }
+    .fg textarea { min-height: 115px; resize: vertical; }
+
+    /* ── FOOTER ── */
+    .ft { background: var(--n950); color: var(--n400); padding: 60px 0 0; }
+    .ft-g { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 40px; padding-bottom: 48px; border-bottom: 1px solid var(--n800); }
+    .ft-br p { font-size: .84rem; line-height: 1.72; margin-top: 16px; max-width: 270px; color: var(--n400); }
+    .ft-so { display: flex; gap: 8px; margin-top: 20px; }
+    .ft-so a { width: 36px; height: 36px; border-radius: 9px; background: var(--n800); border: 1px solid var(--n700); display: flex; align-items: center; justify-content: center; transition: all .25s var(--ease); }
+    .ft-so a:hover { background: var(--g500); border-color: var(--g500); transform: translateY(-2px); }
+    .ft-so a svg { width: 14px; height: 14px; color: var(--n400); }
+    .ft-so a:hover svg { color: #fff; }
+    .ft-c h4 { font-family: var(--fd); font-size: .95rem; color: #fff; margin-bottom: 18px; }
+    .ft-c li { margin-bottom: 10px; }
+    .ft-c a { font-size: .82rem; color: var(--n400); transition: color .2s; }
+    .ft-c a:hover { color: var(--g300); }
+    .ft-b { padding: 24px 0; display: flex; justify-content: space-between; align-items: center; font-size: .72rem; flex-wrap: wrap; gap: 8px; color: var(--n600); }
+    .ft-b a { color: var(--g300); font-weight: 600; transition: opacity .2s; }
+    .ft-b a:hover { opacity: .7; }
+
+    /* ── REVEAL ── */
+    .rv { opacity: 0; transform: translateY(26px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
+    .rv.vis { opacity: 1; transform: translateY(0); }
+    .d1 { transition-delay: .1s; } .d2 { transition-delay: .2s; } .d3 { transition-delay: .25s; } .d4 { transition-delay: .35s; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 1024px) {
+      .hero-g { grid-template-columns: 1fr; gap: 44px; } .hero-v { max-width: 520px; }
+      .tg { grid-template-columns: repeat(2,1fr); } .svc-grid { grid-template-columns: repeat(2,1fr); }
+      .emp-c { grid-template-columns: 1fr; padding: 44px; } .ft-g { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 768px) {
+      .nm { display: none; position: absolute; top: 72px; left: 0; right: 0; background: #fff; border-bottom: 1px solid var(--n200); padding: 16px; flex-direction: column; gap: 4px; box-shadow: 0 20px 50px rgba(6,13,26,.12); }
+      .nm.on { display: flex; } .nm a { width: 100%; padding: 13px 16px; }
+      .hb { display: block; }
+      .about-l { grid-template-columns: 1fr; gap: 44px; }
+      .cta-g { grid-template-columns: 1fr; }
+      .ins-l { grid-template-columns: 1fr; gap: 44px; }
+      .test-g { grid-template-columns: 1fr; }
+      .sg { grid-template-columns: 1fr; }
+      .hf-card { left: 14px; bottom: -16px; } .hs-row { right: 10px; top: 10px; }
+    }
+    @media (max-width: 640px) {
+      .svc-grid { grid-template-columns: 1fr; } .tg { grid-template-columns: 1fr; }
+      .fr { grid-template-columns: 1fr; } .il { grid-template-columns: 1fr; }
+      .ft-g { grid-template-columns: 1fr; } .ft-b { flex-direction: column; text-align: center; }
+      .hrs-r { gap: 20px; }
+      .emp-c { padding: 30px 24px; } .ep { flex-direction: column; }
+      .hero-a { flex-direction: column; align-items: stretch; }
+      .cf { padding: 28px 22px; }
+      .btn { padding: 14px 22px; justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="w nav-i">
+      <a href="#" class="nav-b">
+        <img src="https://static.wixstatic.com/media/90a441_5cbf4a3b25c84a75ba2e2e844b4e984d~mv2.jpg/v1/fill/w_163,h_131,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/90a441_5cbf4a3b25c84a75ba2e2e844b4e984d~mv2.jpg" alt="RJN Physical Therapy">
+        <div class="nav-bt"><strong>RJN Physical Therapy</strong><small>Latham, NY &bull; Est. 1994</small></div>
+      </a>
+      <div class="nm" id="nm">
+        <a href="#about">About</a><a href="#services">Services</a><a href="#team">Team</a><a href="#shop">Sessions</a><a href="#testimonials">Reviews</a><a href="#insurance">Insurance</a><a href="#contact" class="nc">Get Started</a>
+      </div>
+      <button class="hb" id="hb" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <section class="hero" id="home">
+    <div class="hero-glow"></div>
+    <div class="w">
+      <div class="hero-g">
+        <div>
+          <div class="hero-ey">Now Accepting New Patients in Latham, NY</div>
+          <h1>Stop Living Around <em>Your&nbsp;Pain</em></h1>
+          <p class="hero-p">Whether you're recovering from surgery, sidelined by a sports injury, or just tired of hurting every day, we'll build a plan to get you back to the life you want. Trusted by the Capital District since 1994.</p>
+          <div class="hero-a">
+            <a href="#contact" class="btn btn-cy">Start Your Recovery <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg></a>
+            <a href="tel:5184892020" class="btn btn-gh"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="width:16px;height:16px"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"/></svg>Call (518) 489-2020</a>
+          </div>
+        </div>
+        <div class="hero-v">
+          <img src="https://static.wixstatic.com/media/90a441_22d980452f8c4e0b9413f14de29aac97~mv2.jpg/v1/fill/w_1600,h_900,al_c,q_85,enc_avif,quality_auto/90a441_22d980452f8c4e0b9413f14de29aac97~mv2.jpg" alt="RJN Physical Therapy facility">
+          <div class="hf-card"><div class="n">30+</div><div class="l">Years Serving the Capital District</div></div>
+          <div class="hs-row"><div class="hs-pill"><div class="n">8</div><div class="l">Expert Therapists</div></div><div class="hs-pill"><div class="n">1:1</div><div class="l">Every Visit</div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="w"><div class="about-l rv">
+      <div class="about-m"><img src="https://static.wixstatic.com/media/90a441_d523a6a455b64ace802578841db55c61~mv2.jpg/v1/fill/w_520,h_694,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/90a441_d523a6a455b64ace802578841db55c61~mv2.jpg" alt="Treatment session"><div class="ab"></div></div>
+      <div><div class="tag">Why Patients Trust Us</div><h2 class="hd">30 Years of Getting People Back to Their&nbsp;Lives</h2><p class="pr">You don't want a clinic that treats you like a number. You want someone who actually listens, figures out what's going on, and gives you a real plan. That's been our approach since 1994. Eight experienced therapists. One-on-one attention every single visit. No rotating through assistants, no guesswork. Just focused, hands-on care from people who genuinely care whether you get better.</p><div class="mis"><h4>Our Commitment to You</h4><p>"We give every patient the time, attention, and expertise it takes to actually recover. Not just to feel okay, but to get back to doing what you love."</p></div></div>
+    </div></div>
+  </section>
+
+  <section class="svc" id="services">
+    <div class="svc-gl"></div>
+    <div class="w">
+      <div class="svc-h rv"><div class="tag">What We Treat</div><h2 class="hd">Whatever Stopped You, We'll Get You&nbsp;Moving</h2><p class="pr">From the first injury to the last rep of your final session, we treat the whole picture, not just the symptom.</p></div>
+      <div class="svc-grid rv d1">
+        <div class="sc"><div class="sc-n">01</div><h3>Orthopedic Rehab</h3><p>Joints, muscles, bones. Whether it's a post-surgical recovery, a fracture, or a repetitive strain that just won't quit, we get to the root and fix it.</p></div>
+        <div class="sc"><div class="sc-n">02</div><h3>Sports Injury</h3><p>Torn ACL. Blown rotator cuff. Rolled ankle. We've seen it all and rehabbed it all. Get back to competing, not just surviving workouts.</p></div>
+        <div class="sc"><div class="sc-n">03</div><h3>Manual Therapy</h3><p>Hands-on treatment that actually moves the needle. Targeted joint mobilization, soft tissue work, and traction to cut pain and restore mobility faster.</p></div>
+        <div class="sc"><div class="sc-n">04</div><h3>Laser &amp; Modalities</h3><p>Ultrasound, electrical stimulation, whirlpool, and laser therapy for neuropathy and chronic pain that hasn't responded to anything else.</p></div>
+        <div class="sc"><div class="sc-n">05</div><h3>Personal Fitness</h3><p>One-on-one training, monthly gym memberships, and specialized senior programs to keep you strong long after your PT is done.</p></div>
+        <div class="sc"><div class="sc-n">06</div><h3>Youth Athletes</h3><p>Dedicated sessions for high school athletes and the Competitive Edge program, building speed, agility, and strength from age 9 up.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="team" id="team">
+    <div class="w">
+      <div class="team-h rv"><div class="tag" style="justify-content:center;">Your Therapists</div><h2 class="hd">Real Experts. Real&nbsp;Results.</h2><p class="pr">Eight board-certified clinicians who have spent their careers mastering this. You'll see the same faces every visit and actually feel the difference.</p></div>
+      <div class="tg">
+        <div class="tc rv d1"><div class="tc-i"><img src="https://static.wixstatic.com/media/90a441_626e140245794bed9b484cd9bf624d94~mv2.jpg/v1/fill/w_396,h_528,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/90a441_626e140245794bed9b484cd9bf624d94~mv2.jpg" alt="Rick Waite"></div><div class="tc-b"><h3>Rick Waite</h3><span>PT, DPT</span></div></div>
+        <div class="tc rv d2"><div class="tc-i"><img src="https://static.wixstatic.com/media/90a441_c2f03422e61f48558db6208b4bbc23c5~mv2.jpg/v1/fill/w_396,h_528,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/90a441_c2f03422e61f48558db6208b4bbc23c5~mv2.jpg" alt="Brendan Sullivan"></div><div class="tc-b"><h3>Brendan Sullivan</h3><span>PT, DPT, OCS, MTC, MSCS, CSCS</span></div></div>
+        <div class="tc rv d3"><div class="tc-i"><img src="https://static.wixstatic.com/media/90a441_38b45d65ceb54735a80b8f2ba9f579fa~mv2.jpg/v1/fill/w_396,h_528,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/90a441_38b45d65ceb54735a80b8f2ba9f579fa~mv2.jpg" alt="Becky Staples"></div><div class="tc-b"><h3>Becky Staples</h3><span>PT, DPT</span></div></div>
+        <div class="tc rv d4"><div class="tc-i"><img src="https://static.wixstatic.com/media/90a441_d23c01db17114634932a1713657ec20b~mv2.jpg/v1/fill/w_396,h_528,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/90a441_d23c01db17114634932a1713657ec20b~mv2.jpg" alt="Kelly Moran Chang"></div><div class="tc-b"><h3>Kelly Moran Chang</h3><span>PT, DPT, OCS</span></div></div>
+        <div class="tc rv d1"><div class="tc-i"><img src="https://static.wixstatic.com/media/90a441_46e58a33931c42b5981b1b3bde2f7d7a~mv2.jpg/v1/fill/w_400,h_534,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/90a441_46e58a33931c42b5981b1b3bde2f7d7a~mv2.jpg" alt="Joe O'Hagan"></div><div class="tc-b"><h3>Joe O'Hagan</h3><span>PTA, SCS</span></div></div>
+        <div class="tc rv d2"><div class="tc-i"><img src="https://static.wixstatic.com/media/90a441_5b810246c6564524903fbc4fd51080c5~mv2.jpg/v1/fill/w_400,h_534,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/90a441_5b810246c6564524903fbc4fd51080c5~mv2.jpg" alt="JJ Grogan"></div><div class="tc-b"><h3>JJ Grogan</h3><span>PT, DPT</span></div></div>
+        <div class="tc rv d3"><div class="tc-i"><img src="https://static.wixstatic.com/media/90a441_2b78491b26a64e34aea60cd75e1979c7~mv2.jpg/v1/fill/w_400,h_534,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/90a441_2b78491b26a64e34aea60cd75e1979c7~mv2.jpg" alt="Cathy Lincourt"></div><div class="tc-b"><h3>Cathy Lincourt</h3><span>PTA</span></div></div>
+        <div class="tc rv d4"><div class="tc-i"><img src="https://static.wixstatic.com/media/90a441_5bff4f306cb2436993929e4849ed28da~mv2.jpg/v1/fill/w_466,h_544,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/90a441_5bff4f306cb2436993929e4849ed28da~mv2.jpg" alt="Lynn Isernia"></div><div class="tc-b"><h3>Lynn Isernia</h3><span>PT</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="shop" id="shop">
+    <div class="w">
+      <div class="shop-h rv"><div class="tag" style="justify-content:center;">Recovery Sessions</div><h2 class="hd" style="color:#fff;">Recover Like the Pros&nbsp;Do</h2><p class="pr" style="color:var(--n300);">Add a recovery session to your care plan or book one on its own. Your body will feel the difference the next day.</p></div>
+      <div class="sg">
+        <div class="pc rv d1">
+          <div class="pc-hero" style="position:relative;overflow:hidden;">
+            <div style="position:absolute;inset:0;display:flex;">
+              <div style="flex:1;display:flex;align-items:center;justify-content:center;background:linear-gradient(160deg,#1a0500,var(--n950));">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="#f97316" width="64" height="64" style="opacity:.35;"><path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0 1 12 21 8.25 8.25 0 0 1 6.038 7.047 8.287 8.287 0 0 0 9 9.601a8.983 8.983 0 0 1 3.361-6.867 8.21 8.21 0 0 0 3 2.48Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M12 18a3.75 3.75 0 0 0 .495-7.468 5.99 5.99 0 0 0-1.925 3.547 5.975 5.975 0 0 1-2.133-1.001A3.75 3.75 0 0 0 12 18Z"/></svg>
+              </div>
+              <div style="width:1px;background:var(--n700);"></div>
+              <div style="flex:1;display:flex;align-items:center;justify-content:center;background:linear-gradient(160deg,#00101a,var(--n950));">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="var(--b400)" width="64" height="64" style="opacity:.35;"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"/></svg>
+              </div>
+            </div>
+            <div class="pc-badge">Popular</div>
+          </div>
+          <div class="pc-body">
+            <h3>Hot &amp; Cold Therapy</h3>
+            <div class="ps">Luxury Infrared Sauna + Cold Plunge, always together</div>
+            <p>This is what elite athletes use to recover faster than everyone else. You start in our luxury infrared sauna. Unlike traditional saunas, infrared heat penetrates deep into muscle tissue, not just the surface. It loosens joints, increases circulation, and triggers real cellular recovery from the inside out. Then you hit the cold plunge. Inflammation drops, your nervous system resets, and energy surges. The contrast between the two creates a pumping effect through your tissues that no stretching or foam roller can touch.</p>
+            <p style="font-size:.8rem;color:var(--muted);margin-top:-10px;margin-bottom:20px;">Best for athletes, post-surgical patients, anyone dealing with chronic soreness, inflammation, or fatigue. If you feel run down, this session works.</p>
+            <div class="pt">
+              <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>Deep infrared tissue heat</span>
+              <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>Reduces inflammation</span>
+              <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>Faster muscle recovery</span>
+              <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>Mental clarity &amp; mood</span>
+            </div>
+            <div class="pc-ft" style="flex-direction:column;align-items:flex-start;gap:10px;">
+              <div style="width:100%;">
+                <div style="font-family:var(--fd);font-size:1.4rem;color:#fff;line-height:1;">First session free</div>
+                <div style="font-size:.75rem;color:var(--n400);margin-top:3px;">Then $99 for a 5-session pack — only if you loved it. No charge for the remaining 4 unless you decide it was worth it.</div>
+              </div>
+              <a href="tel:5184892020" class="btn btn-cy" style="padding:10px 20px;font-size:.78rem;width:100%;justify-content:center;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"/></svg>
+                Call Now for Your Free Session
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="pc rv d2">
+          <div class="pc-hero"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width=".8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 0 0-2.455 2.456Z"/></svg><div class="pc-badge">New</div></div>
+          <div class="pc-body">
+            <h3>Compression Arm Sleeves</h3>
+            <div class="ps">In-clinic compression therapy for the arm and elbow</div>
+            <p>Swelling, stiffness, and poor circulation in the arm don't just slow you down, they stall your entire recovery. Our in-clinic compression sleeve sessions use graduated pressure to actively push fluid out of the tissue, restore healthy blood flow, and give your arm the environment it needs to heal. Applied by our therapists, not a machine you run yourself.</p>
+            <div class="pt">
+              <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>Graduated compression</span>
+              <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>Reduces swelling</span>
+              <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>Supports circulation</span>
+              <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>Clinician-guided</span>
+            </div>
+            <div class="pc-ft"><div class="pr" style="font-size:.8rem;color:var(--n300);">Session — contact for pricing</div><a href="#contact" class="btn btn-cy" style="padding:10px 20px;font-size:.78rem;">Book Session <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg></a></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="test" id="testimonials">
+    <div class="w">
+      <div class="test-h rv"><div class="tag" style="justify-content:center;">Patient Stories</div><h2 class="hd">Don't Take Our Word for&nbsp;It</h2><p class="pr">Real people from the Capital District who came in hurting and left better.</p></div>
+      <div class="test-g">
+        <div class="tsc rv d1"><div class="ts-s"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div><blockquote>"I spent a lot of time with these amazing therapists this winter. They made my recovery fun and productive! Highly recommended!"</blockquote><div class="ts-a"><div class="ts-av">B</div><div><strong>Blake</strong><small>Patient</small></div></div></div>
+        <div class="tsc rv d2"><div class="ts-s"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div><blockquote>"They are as good and friendly as it gets. Family values, work ethic and they know physical therapy like nothing I've ever seen. Don't even think twice, get into their care ASAP."</blockquote><div class="ts-a"><div class="ts-av">E</div><div><strong>Ed</strong><small>Patient</small></div></div></div>
+        <div class="tsc rv d3"><div class="ts-s"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div><blockquote>"By far the best experience with PT ever. They take the time to explain and demonstrate each exercise and make it a positive experience every time. Highly recommend!"</blockquote><div class="ts-a"><div class="ts-av">M</div><div><strong>Michelle</strong><small>Patient</small></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ins" id="insurance">
+    <div class="w"><div class="ins-l">
+      <div class="rv"><div class="tag">Insurance</div><h2 class="hd">Don't Let Insurance Be the&nbsp;Reason You Wait</h2><p class="pr">We accept most major plans, and if you're not sure whether you're covered, just call us. We'll help you figure it out before your first visit, no runaround.</p></div>
+      <div class="il rv d2">
+        <div class="ii"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>Blue Shield NENY</div>
+        <div class="ii"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>CDPHP Plans</div>
+        <div class="ii"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>Empire BC/BS</div>
+        <div class="ii"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>Medicare</div>
+        <div class="ii"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>MVP Plans</div>
+        <div class="ii"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>No Fault (MVA)</div>
+        <div class="ii"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>NYSHIP (Empire Plan)</div>
+        <div class="ii"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>United Healthcare</div>
+        <div class="ii"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>Traditional Blue NENY</div>
+        <div class="ii"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>Worker's Comp</div>
+      </div>
+    </div></div>
+  </section>
+
+  <section class="emp" id="empire">
+    <div class="w"><div class="emp-c rv">
+      <div class="emp-gl"></div>
+      <div style="position:relative;z-index:2;"><div class="tag">A Division of RJN PT</div><h2>Empire Health &amp; Wellness Center</h2><p>Not just recovery, total performance. Empire HWC is where patients and gym clients come when they want to feel strong, move well, and stay that way. Personal training, group fitness, and wellness programs built around you.</p><a href="https://empirehwc.com/" target="_blank" rel="noopener" class="btn btn-gh" style="border-color:var(--n600);color:var(--n300);">Visit Empire HWC <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg></a></div>
+      <div class="ep" style="position:relative;z-index:2;"><img src="https://static.wixstatic.com/media/90a441_eebd0aa2b2f84fcaa95328b33e076f1d~mv2.jpg/v1/fill/w_434,h_474,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/90a441_eebd0aa2b2f84fcaa95328b33e076f1d~mv2.jpg" alt="Brendan Sullivan"><div><h3>Brendan Sullivan</h3><div class="cr">PT, DPT, OCS, MTC, MSCS, CSCS</div><p>Founder of Empire HWC. Practicing since 1997. Board Certified Orthopedic Clinical Specialist, Manual Therapy Certified, and Multiple Sclerosis Certified Specialist. One of the most credentialed therapists in the Capital District.</p></div></div>
+    </div></div>
+  </section>
+
+  <section class="hrs">
+    <div class="w"><div class="hrs-r">
+      <div class="hrs-i"><div class="d">Mon</div><div class="t">7am–7pm</div></div>
+      <div class="hrs-i"><div class="d">Tue</div><div class="t">7am–6:30pm</div></div>
+      <div class="hrs-i"><div class="d">Wed</div><div class="t">7am–7pm</div></div>
+      <div class="hrs-i"><div class="d">Thu</div><div class="t">7am–6:30pm</div></div>
+      <div class="hrs-i"><div class="d">Fri</div><div class="t">8:30am–3:30pm</div></div>
+      <div class="hrs-i"><div class="d">Sat</div><div class="t">8am–12pm</div></div>
+      <div class="hrs-i"><div class="d">Sun</div><div class="t">Closed</div></div>
+    </div></div>
+  </section>
+
+  <section class="cta" id="contact">
+    <div class="w"><div class="cta-g">
+      <div class="rv"><div class="tag">Take the First Step</div><h2 class="hd">Ready to Feel Like Yourself&nbsp;Again?</h2><p class="pr">Send us a message or call directly. No pressure, no commitment. Just a conversation about what's going on and how we can help. Most people feel relief knowing there's a real plan.</p>
+        <div class="ci-cards">
+          <div class="ci-c"><div class="ci-ico"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/></svg></div><div><h4>Address</h4><p>250 Old Loudon Rd, Latham, NY 12110</p></div></div>
+          <iframe title="RJN Physical Therapy location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2935.087624!2d-73.76617!3d42.74541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89de0a7d0f4f4f4f%3A0xabc123!2s250+Old+Loudon+Rd%2C+Latham%2C+NY+12110!5e0!3m2!1sen!2sus!4v1713000000000!5m2!1sen!2sus" width="100%" height="190" style="border:0;border-radius:12px;display:block;margin-top:4px;filter:grayscale(20%) contrast(1.05);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="ci-c"><div class="ci-ico"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"/></svg></div><div><h4>Phone &amp; Fax</h4><p><a href="tel:5184892020">(518) 489-2020</a> &bull; Fax: (518) 489-0716</p></div></div>
+          <div class="ci-c"><div class="ci-ico"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"/></svg></div><div><h4>Email</h4><a href="mailto:erjnphys@nycap.rr.com">erjnphys@nycap.rr.com</a></div></div>
+        </div>
+      </div>
+      <div class="cf rv d2">
+        <h3>Tell Us What's Going On</h3><p>We'll get back to you fast, usually the same day.</p>
+        <form onsubmit="event.preventDefault(); this.querySelector('.btn').textContent='Sent!'; this.querySelector('.btn').style.background='var(--g500)'; this.querySelector('.btn').style.color='#fff';">
+          <div class="fr"><div class="fg"><label>Full Name *</label><input type="text" placeholder="Your name" required></div><div class="fg"><label>Email</label><input type="email" placeholder="you@email.com"></div></div>
+          <div class="fr"><div class="fg"><label>Phone</label><input type="tel" placeholder="(518) 000-0000"></div><div class="fg"><label>What brings you in?</label><select><option value="">Select a reason</option><option>Orthopedic Rehab</option><option>Sports Injury</option><option>Post-Surgical</option><option>Personal Fitness</option><option>Session Inquiry</option><option>Other</option></select></div></div>
+          <div class="fg"><label>Tell us more *</label><textarea placeholder="Where does it hurt? How long has it been going on? What do you want to get back to doing?" required></textarea></div>
+          <button type="submit" class="btn btn-dk" style="width:100%;justify-content:center;">Send My Message <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg></button>
+        </form>
+      </div>
+    </div></div>
+  </section>
+
+  <footer class="ft">
+    <div class="w">
+      <div class="ft-g">
+        <div class="ft-br">
+          <a href="#" class="nav-b"><img src="https://static.wixstatic.com/media/90a441_5cbf4a3b25c84a75ba2e2e844b4e984d~mv2.jpg/v1/fill/w_163,h_131,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/90a441_5cbf4a3b25c84a75ba2e2e844b4e984d~mv2.jpg" alt="RJN PT" style="border-radius:10px;"><div class="nav-bt"><strong style="color:#fff;">RJN Physical Therapy</strong><small>Latham, NY</small></div></a>
+          <p>Helping the Capital District get back to living since 1994. Real therapists, real results, one patient at a time.</p>
+          <div class="ft-so">
+            <a href="https://instagram.com/rjn_pt" target="_blank" rel="noopener" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="https://facebook.com/rjnpt" target="_blank" rel="noopener" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="https://twitter.com/sullptcscs" target="_blank" rel="noopener" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg></a>
+          </div>
+        </div>
+        <div class="ft-c"><h4>Quick Links</h4><ul><li><a href="#about">About Us</a></li><li><a href="#services">Services</a></li><li><a href="#team">Our Team</a></li><li><a href="#shop">Recovery Sessions</a></li><li><a href="#testimonials">Reviews</a></li><li><a href="#contact">Contact</a></li></ul></div>
+        <div class="ft-c"><h4>Services</h4><ul><li><a href="#services">Orthopedic Rehab</a></li><li><a href="#services">Sports Injury</a></li><li><a href="#services">Manual Therapy</a></li><li><a href="#services">Laser Therapy</a></li><li><a href="#services">Personal Fitness</a></li></ul></div>
+        <div class="ft-c"><h4>Contact</h4><ul><li><a href="tel:5184892020">(518) 489-2020</a></li><li><a href="mailto:erjnphys@nycap.rr.com">erjnphys@nycap.rr.com</a></li><li>250 Old Loudon Rd</li><li>Latham, NY 12110</li></ul></div>
+      </div>
+      <div class="ft-b"><span>&copy; <span id="yr"></span> RJN Physical Therapy. All rights reserved.</span><span>250 Old Loudon Rd, Latham, NY 12110</span><span>Design &amp; Creation by MahanMedia LLC</span></div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+    document.getElementById('hb').addEventListener('click',function(){this.classList.toggle('on');document.getElementById('nm').classList.toggle('on');});
+    document.querySelectorAll('.nm a').forEach(a=>a.addEventListener('click',()=>{document.getElementById('hb').classList.remove('on');document.getElementById('nm').classList.remove('on');}));
+    const o=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('vis');});},{threshold:.1,rootMargin:'0px 0px -30px 0px'});
+    document.querySelectorAll('.rv').forEach(el=>o.observe(el));
+  </script>
+  <style>
+    .popup-overlay { position: fixed; inset: 0; z-index: 999; background: rgba(6,13,26,.65); display: flex; align-items: center; justify-content: center; padding: 20px; backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); animation: popFade .35s cubic-bezier(.22,1,.36,1) both; }
+    @keyframes popFade { from { opacity: 0; } to { opacity: 1; } }
+    .popup-box { background: #fff; border-radius: 22px; width: 100%; max-width: 420px; overflow: hidden; animation: popUp .4s cubic-bezier(.22,1,.36,1) .05s both; box-shadow: 0 32px 80px rgba(6,13,26,.45); }
+    @keyframes popUp { from { opacity: 0; transform: translateY(24px) scale(.97); } to { opacity: 1; transform: translateY(0) scale(1); } }
+    .popup-head { background: var(--n950); padding: 20px 22px 16px; display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
+    .popup-head-l { display: flex; align-items: center; gap: 10px; }
+    .popup-icon { width: 36px; height: 36px; border-radius: 9px; background: var(--n800); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .popup-head strong { display: block; font-size: .78rem; font-weight: 600; color: var(--g300); letter-spacing: .08em; text-transform: uppercase; }
+    .popup-head span { display: block; font-size: .82rem; color: var(--n300); margin-top: 1px; }
+    .popup-close { background: none; border: none; cursor: pointer; padding: 2px; color: var(--n500); line-height: 1; transition: color .2s; }
+    .popup-close:hover { color: #fff; }
+    .popup-body { padding: 24px; }
+    .popup-service { display: flex; align-items: center; gap: 10px; margin-bottom: 18px; }
+    .popup-icons { display: flex; align-items: center; gap: 6px; }
+    .popup-sicon { width: 42px; height: 42px; border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .popup-divider { width: 2px; height: 32px; background: var(--n200); border-radius: 2px; }
+    .popup-service h3 { font-family: var(--fd); font-size: 1.15rem; color: var(--ink); line-height: 1.2; margin-bottom: 2px; }
+    .popup-service p { font-size: .78rem; color: var(--muted); }
+    .popup-timer-row { background: var(--n50); border-radius: 14px; padding: 16px 20px; margin-bottom: 18px; display: flex; align-items: center; justify-content: space-between; gap: 16px; border: 1px solid var(--n200); }
+    .popup-timer-row .label { font-size: .65rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: var(--muted); margin-bottom: 4px; }
+    #popup-timer { font-family: var(--fd); font-size: 2rem; color: var(--ink); line-height: 1; font-variant-numeric: tabular-nums; transition: color .4s; }
+    .popup-price { text-align: right; }
+    .popup-price .free { font-family: var(--fd); font-size: 1.6rem; color: var(--g500); line-height: 1; }
+    .popup-price .was { font-size: .72rem; color: var(--muted); text-decoration: line-through; margin-top: 2px; }
+    .popup-checks { margin-bottom: 20px; display: flex; flex-direction: column; gap: 7px; }
+    .popup-check { display: flex; align-items: center; gap: 8px; font-size: .83rem; color: var(--ink2); }
+    .popup-check svg { flex-shrink: 0; }
+    .popup-cta { width: 100%; padding: 14px; background: var(--g500); color: #fff; border: none; border-radius: 12px; font-family: var(--fb); font-size: .88rem; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 9px; transition: all .25s cubic-bezier(.22,1,.36,1); box-shadow: 0 4px 18px rgba(26,125,74,.2); }
+    .popup-cta:hover { background: var(--g400); transform: translateY(-2px); box-shadow: 0 8px 28px rgba(26,125,74,.3); }
+    .popup-cta:disabled { background: var(--muted); box-shadow: none; cursor: default; transform: none; }
+    .popup-fine { font-size: .68rem; color: var(--faint); text-align: center; margin-top: 9px; }
+  </style>
+
+  <div class="popup-overlay" id="popup-overlay">
+    <div class="popup-box" id="popup-box">
+      <div class="popup-head">
+        <div class="popup-head-l">
+          <div class="popup-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="var(--g300)" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"/></svg>
+          </div>
+          <div><strong>RJN Physical Therapy</strong><span>Limited-time offer</span></div>
+        </div>
+        <button class="popup-close" id="popup-close" aria-label="Close">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <div class="popup-body">
+        <div class="popup-service">
+          <div class="popup-icons">
+            <div class="popup-sicon" style="background:#fff5f0;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path stroke="#f97316" d="M15.362 5.214A8.252 8.252 0 0 1 12 21 8.25 8.25 0 0 1 6.038 7.047 8.287 8.287 0 0 0 9 9.601a8.983 8.983 0 0 1 3.361-6.867 8.21 8.21 0 0 0 3 2.48Z"/><path stroke="#f97316" d="M12 18a3.75 3.75 0 0 0 .495-7.468 5.99 5.99 0 0 0-1.925 3.547 5.975 5.975 0 0 1-2.133-1.001A3.75 3.75 0 0 0 12 18Z"/></svg></div>
+            <div class="popup-divider"></div>
+            <div class="popup-sicon" style="background:#eff6ff;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#3b8fd4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"/></svg></div>
+          </div>
+          <div>
+            <h3>Infrared Sauna + Cold Plunge</h3>
+            <p>First session completely free — no commitment</p>
+          </div>
+        </div>
+        <div class="popup-timer-row">
+          <div>
+            <div class="label">Offer expires in</div>
+            <div id="popup-timer">5:00</div>
+          </div>
+          <div class="popup-price">
+            <div class="free">Free</div>
+            <div class="was">then $99 / 5 sessions</div>
+          </div>
+        </div>
+        <div class="popup-checks">
+          <div class="popup-check"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="var(--g500)" stroke-linecap="round" stroke-linejoin="round"><path d="m4.5 12.75 6 6 9-13.5"/></svg>Try the full session — zero commitment</div>
+          <div class="popup-check"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="var(--g500)" stroke-linecap="round" stroke-linejoin="round"><path d="m4.5 12.75 6 6 9-13.5"/></svg>Only pay for the remaining 4 if you loved it</div>
+          <div class="popup-check"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="var(--g500)" stroke-linecap="round" stroke-linejoin="round"><path d="m4.5 12.75 6 6 9-13.5"/></svg>Clinician-guided every session</div>
+        </div>
+        <a href="tel:5184892020" class="popup-cta" id="popup-cta" onclick="document.getElementById('popup-overlay').style.display='none';">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"/></svg>
+          Call Now for Your Free Session
+        </a>
+        <p class="popup-fine">New patients only &bull; Latham, NY &bull; One per person</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function(){
+      var secs = 300;
+      var timerEl = document.getElementById('popup-timer');
+      var ctaBtn = document.getElementById('popup-cta');
+      document.getElementById('popup-close').addEventListener('click', function(){ document.getElementById('popup-overlay').style.display='none'; });
+      var iv = setInterval(function(){
+        secs--;
+        if(secs <= 0){
+          clearInterval(iv);
+          timerEl.textContent = '0:00';
+          timerEl.style.color = '#e53e3e';
+          ctaBtn.textContent = 'Offer expired';
+          ctaBtn.disabled = true;
+          return;
+        }
+        var m = Math.floor(secs/60);
+        var s = secs % 60;
+        timerEl.textContent = m + ':' + (s < 10 ? '0' : '') + s;
+        if(secs <= 60) timerEl.style.color = '#e53e3e';
+        else if(secs <= 120) timerEl.style.color = '#d97706';
+      }, 1000);
+    })();
+  </script>
+
+</body>
+</html>
